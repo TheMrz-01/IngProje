@@ -157,7 +157,7 @@ h3 {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
   gap: clamp(1.4rem, 4vw, 3.5rem);
   align-items: center;
   min-height: calc(100svh - 76px);
@@ -294,15 +294,15 @@ h3 {
 }
 
 .photo-card.large {
-  min-height: 470px;
+  min-height: 340px;
 }
 
 .photo-card.tall {
-  min-height: 560px;
+  min-height: 420px;
 }
 
 .photo-card.small {
-  min-height: 165px;
+  min-height: 140px;
   margin-bottom: 1rem;
   box-shadow: none;
 }
@@ -493,11 +493,13 @@ h3 {
   display: grid;
   align-content: start;
   gap: 0.7rem;
+  max-width: 460px;
+  width: 100%;
 }
 
 .carousel {
   position: relative;
-  min-height: 360px;
+  min-height: 285px;
   overflow: hidden;
   background: #d7d1c5;
   border: 2px solid var(--line);
@@ -512,6 +514,12 @@ h3 {
   object-fit: cover;
   opacity: 0;
   transition: opacity 260ms ease;
+}
+
+.carousel img.contain {
+  object-fit: contain;
+  padding: 1rem;
+  background: #fff;
 }
 
 .carousel img.is-active {
@@ -535,7 +543,7 @@ h3 {
 }
 
 .gallery-grid .photo-card {
-  min-height: 250px;
+  min-height: 190px;
 }
 
 .visit {
@@ -629,11 +637,11 @@ h3 {
 
   .photo-card.large,
   .photo-card.tall {
-    min-height: 340px;
+    min-height: 300px;
   }
 
   .carousel {
-    min-height: 320px;
+    min-height: 280px;
   }
 }
 
@@ -658,6 +666,6 @@ h3 {
   }
 
   .carousel {
-    min-height: 260px;
+    min-height: 230px;
   }
 }
